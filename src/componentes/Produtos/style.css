@@ -1,0 +1,163 @@
+.produtos{
+    width: 100%;
+    margin-top: 3%;
+}
+
+.produtos button{
+    padding: 0px;
+}
+
+.produtos a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.iphone{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardIphone{
+    width: 350px;
+    height: 550px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.iphone img{
+    margin-bottom: 10%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.cardIphone h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardIphone button{
+    margin-top: 10px;
+    border-style: none;
+    background-color: #ccc;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    height: 5%;
+    width: 30%;
+}
+
+.cardIphone button:hover{
+    background-color: goldenrod;
+    font-weight: 600;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+/* ipad */
+
+.ipad{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.cardIpad{
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.ipad img{
+    margin-bottom: 10%;
+    width: 90%;
+    border-radius: 30px;
+}
+
+
+.cardIpad h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardIpad button{
+    margin-top: 10px;
+    border-style: none;
+    background-color: #ccc;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    height: 5%;
+    width: 30%;
+}
+
+.cardIpad button:hover{
+    background-color: goldenrod;
+    font-weight: 600;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.cardIpad:hover{
+    transform: scale(0.9);
+    transition: 1.5s;
+}
+
+.cardIphone:hover{
+    transform: scale(0.9);
+    transition: 1.5s;
+}
+
+@media screen and (max-width:1100px) {
+    .cardIpad, .cardIphone{
+        height: 400px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .cardIpad, .cardIphone{
+        font-size: 80%;
+        height: 350px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .cardIpad{
+        display: none;
+    }
+    .cardIphone{
+        width: 300px;
+        font-size: 60%;
+        margin-top: 5%;
+    }
+    .cardIphone img{
+        width: 80%;
+    }
+    .cardIphone h2{
+        margin-top: -10%;
+    }
+    .iphone{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardIphone:hover{
+        transform: scale(0.9);
+        transition: 1.5s;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .cardIphone{
+        width: 250px;
+        font-size: 60%;
+        margin-top: 5%;
+    }
+    .cardIphone img{
+        width: 90%;
+    }
+}

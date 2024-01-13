@@ -1,0 +1,62 @@
+#mainContatos a:hover{
+    transform: scale(0.9);
+    transition: 1.5s;
+}
+
+#mainContatos img{
+    width: 80%;
+
+    border-radius: 80px;
+    border: solid 0.5px white;
+    box-shadow: 10px 10px 30px black;
+}
+
+#mainContatos {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0px;
+    color: black;
+    margin-bottom: 10%;
+}
+
+#mainContatos div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 80%;
+;
+}
+
+@media screen and (max-width:850px) {
+    #mainContatos{
+        flex-direction: column;
+    }
+    #mainContatos img{
+        width: 60%;
+        border-radius: 50px;
+    }
+    #mainContatos h2{
+        font-size: 90%;
+    }
+    #divInstagram{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #mainContatos img{
+
+        border-radius: 30px;
+    }
+    #mainContatos h2{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #divInstagram{
+        margin-top: 15%;
+    }
+}

@@ -1,0 +1,35 @@
+#youtubeIphone15{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#iframe1, #iframe2{
+    width: 50%;
+    height: 385px;
+}
+
+#infoIpremium{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linhaWatch, .linhaYoutube{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    #iframe1{
+        width: 100%;
+    }
+
+    #iframe2{
+        display: none;
+    }
+    
+}
